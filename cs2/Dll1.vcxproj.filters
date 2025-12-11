@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{1ae12630-5e01-4d17-88c9-3eb736105665}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kmbox">
+      <UniqueIdentifier>{2ad60c3a-2547-4e42-901c-3561bc09e9d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs">
+      <UniqueIdentifier>{7d40485d-00a4-4d18-bdc4-97e5e176d2e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OS-ImGui">
+      <UniqueIdentifier>{8952ba69-1e61-4fcc-92ec-92a6601c4d30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OS-ImGui\imgui">
+      <UniqueIdentifier>{bb4a14e7-a362-4e6d-bc87-d440ff2cb548}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="radar">
+      <UniqueIdentifier>{49243df5-66a6-4942-9cd3-cdaff21f03af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="setmgr">
+      <UniqueIdentifier>{994c0809-0039-420f-8dbd-6c918a7d92eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="socket">
+      <UniqueIdentifier>{1abf169f-2391-4d4e-88bd-25a42f40ab56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils">
+      <UniqueIdentifier>{c50511e1-bb89-4145-9d72-4382c67d7959}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base\Bone.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\Cheats.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\Entity.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\Game.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\GlobalVars.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\Offsets.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\TriggerBot.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="CheatsThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="kmbox\KmboxB.cpp">
+      <Filter>kmbox</Filter>
+    </ClCompile>
+    <ClCompile Include="kmbox\KmBoxNetManager.cpp">
+      <Filter>kmbox</Filter>
+    </ClCompile>
+    <ClCompile Include="kmbox\kmboxNetPLUS.cpp">
+      <Filter>kmbox</Filter>
+    </ClCompile>
+    <ClCompile Include="kmbox\kmboxNetPlusManager.cpp">
+      <Filter>kmbox</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\sha512.cpp">
+      <Filter>libs</Filter>
+    </ClCompile>
+    <ClCompile Include="OS-ImGui\OS-ImGui.cpp">
+      <Filter>OS-ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="OS-ImGui\OS-ImGui_Base.cpp">
+      <Filter>OS-ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="OS-ImGui\OS-ImGui_External.cpp">
+      <Filter>OS-ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="OS-ImGui\imgui\imgui.cpp">
+      <Filter>OS-ImGui\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="OS-ImGui\imgui\imgui_demo.cpp">
+      <Filter>OS-ImGui\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="OS-ImGui\imgui\imgui_draw.cpp">
+      <Filter>OS-ImGui\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="OS-ImGui\imgui\imgui_impl_dx11.cpp">
+      <Filter>OS-ImGui\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="OS-ImGui\imgui\imgui_impl_win32.cpp">
+      <Filter>OS-ImGui\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="OS-ImGui\imgui\imgui_tables.cpp">
+      <Filter>OS-ImGui\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="OS-ImGui\imgui\imgui_widgets.cpp">
+      <Filter>OS-ImGui\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="radar\Radar.cpp">
+      <Filter>radar</Filter>
+    </ClCompile>
+    <ClCompile Include="setmgr\SettingsManager.cpp">
+      <Filter>setmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\ConfigMenu.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\ConfigSaver.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="base\AimBot.hpp">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\Bone.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\Cheats.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\Entity.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\Game.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\Globals.hpp">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\GlobalVars.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\GUI.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\MenuConfig.hpp">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\Offsets.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\Render.hpp">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\TriggerBot.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\View.hpp">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="CheatsThread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomFont.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Globals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KeysValues.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Language.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="kmbox\Exclude2H.h">
+      <Filter>kmbox</Filter>
+    </ClInclude>
+    <ClInclude Include="kmbox\ExcludedH.h">
+      <Filter>kmbox</Filter>
+    </ClInclude>
+    <ClInclude Include="kmbox\HidTable.h">
+      <Filter>kmbox</Filter>
+    </ClInclude>
+    <ClInclude Include="kmbox\kmbox_b.hpp">
+      <Filter>kmbox</Filter>
+    </ClInclude>
+    <ClInclude Include="kmbox\KmboxB.h">
+      <Filter>kmbox</Filter>
+    </ClInclude>
+    <ClInclude Include="kmbox\KmBoxConfig.h">
+      <Filter>kmbox</Filter>
+    </ClInclude>
+    <ClInclude Include="kmbox\KmBoxNetManager.h">
+      <Filter>kmbox</Filter>
+    </ClInclude>
+    <ClInclude Include="kmbox\kmboxNetPLUS.h">
+      <Filter>kmbox</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\base64.h">
+      <Filter>libs</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\sha512.hpp">
+      <Filter>libs</Filter>
+    </ClInclude>
+    <ClInclude Include="OS-ImGui\OS-ImGui.h">
+      <Filter>OS-ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="OS-ImGui\OS-ImGui_Base.h">
+      <Filter>OS-ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="OS-ImGui\OS-ImGui_Exception.hpp">
+      <Filter>OS-ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="OS-ImGui\OS-ImGui_External.h">
+      <Filter>OS-ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="OS-ImGui\OS-ImGui_Struct.h">
+      <Filter>OS-ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="OS-ImGui\imgui\imconfig.h">
+      <Filter>OS-ImGui\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="OS-ImGui\imgui\imgui.h">
+      <Filter>OS-ImGui\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="OS-ImGui\imgui\imgui_impl_dx11.h">
+      <Filter>OS-ImGui\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="OS-ImGui\imgui\imgui_impl_win32.h">
+      <Filter>OS-ImGui\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="OS-ImGui\imgui\imgui_internal.h">
+      <Filter>OS-ImGui\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="OS-ImGui\imgui\imstb_rectpack.h">
+      <Filter>OS-ImGui\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="OS-ImGui\imgui\imstb_textedit.h">
+      <Filter>OS-ImGui\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="OS-ImGui\imgui\imstb_truetype.h">
+      <Filter>OS-ImGui\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="radar\mapsdata.h">
+      <Filter>radar</Filter>
+    </ClInclude>
+    <ClInclude Include="radar\Radar.h">
+      <Filter>radar</Filter>
+    </ClInclude>
+    <ClInclude Include="setmgr\SettingsManager.h">
+      <Filter>setmgr</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\ConfigMenu.hpp">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\ConfigSaver.hpp">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\Format.hpp">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\ProcessManager.hpp">
+      <Filter>utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
