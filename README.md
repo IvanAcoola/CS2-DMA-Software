@@ -53,6 +53,10 @@ Example for BPro
    "en": "en"
 }
 ```
+
+Possible values for: 
+* "en" - en / ch (English, Chinese)
+* "type" - net / net+ (encrypted net-kmbox) / b (its BPro) / none (to use without kmbox)
     
 ## 🤖 Features
 
