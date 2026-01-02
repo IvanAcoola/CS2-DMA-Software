@@ -80,7 +80,12 @@ void main(HMODULE module) {
 	std::cout << "[ DMA ] Attached to game process" << std::endl;
 
 	std::string offsets = readFile("offsets.json");
+
+	std::cout << "[ DMA ] Readed offsets.json" << std::endl;
+
 	std::string client = readFile("client_dll.json");
+
+	std::cout << "[ DMA ] Readed client_dll.json" << std::endl;
 
 	Offset::UpdateOffsets(offsets, client);
 
@@ -96,6 +101,7 @@ void main(HMODULE module) {
 
 	if (!fs::directory_entry(MenuConfig::path).exists()) {
 		fs::create_directory(MenuConfig::path);
+		std::cout << "[ DMA ] Created config folder" << std::endl;
 	}
 
 	std::cout << "[ DMA ] Starting threads..." << std::endl;
