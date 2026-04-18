@@ -46,56 +46,82 @@ bool CEntity::UpdatePawn(const DWORD64& PlayerPawnAddress)
 
 	if (!this->Pawn.GetCameraPos())
 	{
+#ifdef DEBUG_PRINTS
 		std::cout << "\t\tFailed to update GetCameraPos" << std::endl;
+#endif // DEBUG_PRINTS
 		return false;
 	}
 	if (!this->Pawn.GetPos()) {
+#ifdef DEBUG_PRINTS
 		std::cout << "\t\tFailed to update GetPos" << std::endl;
+#endif // DEBUG_PRINTS
 		return false;
 	}
 	if (!this->Pawn.GetViewAngle()) {
+#ifdef DEBUG_PRINTS
 		std::cout << "\t\tFailed to update GetViewAngle" << std::endl;
+#endif // DEBUG_PRINTS
 		return false;
 	}
 	if (!this->Pawn.GetWeaponName()) {
+#ifdef DEBUG_PRINTS
 		std::cout << "\t\tFailed to update GetWeaponName" << std::endl;
+#endif // DEBUG_PRINTS
 		return false;
 	}
 	if (!this->Pawn.GetAimPunchAngle()) {
+#ifdef DEBUG_PRINTS
 		std::cout << "\t\tFailed to update GetAimPunchAngle" << std::endl;
+#endif // DEBUG_PRINTS
 		return false;
 	}
 	if (!this->Pawn.GetShotsFired()) {
+#ifdef DEBUG_PRINTS
 		std::cout << "\t\tFailed to update GetShotsFired" << std::endl;
+#endif // DEBUG_PRINTS
 		return false;
 	}
 	if (!this->Pawn.GetHealth()) {
+#ifdef DEBUG_PRINTS
 		std::cout << "\t\tFailed to update GetHealth" << std::endl;
+#endif // DEBUG_PRINTS
 		return false;
 	}
 	if (!this->Pawn.GetTeamID()) {
+#ifdef DEBUG_PRINTS
 		std::cout << "\t\tFailed to update GetTeamID" << std::endl;
+#endif // DEBUG_PRINTS
 		return false;
 	}
 	if (!this->Pawn.GetFov()) {
+#ifdef DEBUG_PRINTS
 		std::cout << "\t\tFailed to update GetFov" << std::endl;
+#endif // DEBUG_PRINTS
 		return false;
 	}
 	if (!this->Pawn.GetSpotted()) {
+#ifdef DEBUG_PRINTS
 		std::cout << "\t\tFailed to update GetSpotted" << std::endl;
+#endif // DEBUG_PRINTS
 		return false;
 	}
 	if (!this->Pawn.GetFFlags()) {
+#ifdef DEBUG_PRINTS
 		std::cout << "\t\tFailed to update GetFFlags" << std::endl;
+#endif // DEBUG_PRINTS
 		return false;
 	}
 	if (!this->Pawn.GetAimPunchCache()) {
+#ifdef DEBUG_PRINTS
 		std::cout << "\t\tFailed to update GetAimPunchCache" << std::endl;
+#endif // DEBUG_PRINTS
 		return false;
 	}
 
 	if (!this->Pawn.BoneData.UpdateAllBoneData(PlayerPawnAddress)) {
+#ifdef DEBUG_PRINTS
 		std::cout << "\t\tFailed to update UpdateAllBoneData" << std::endl;
+#endif // DEBUG_PRINTS
 		return false;
 	}
 
@@ -166,7 +192,9 @@ bool PlayerPawn::GetWeaponName()
 		char Buffer[MAX_PATH]{};
 		WeaponNameAddress = ProcessMgr.TraceAddress(this->Address + Offset::pClippingWeapon, { 0x10, 0x20 ,0x0 });
 		if (WeaponNameAddress == 0) {
+#ifdef DEBUG_PRINTS
 			std::cout << "GetWeaponName Error-1" << std::endl;
+#endif // DEBUG_PRINTS
 			return false;
 		}
 

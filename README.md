@@ -22,7 +22,7 @@ You need to put files in same
 - leechcore.dll
 - vmm.dll
 
-[VT - exe from release (you can compare hash)](https://www.virustotal.com/gui/file/a5ed59b3ac27868e387cfda2282262e75b07054c814acf7c71885bb84ffb1fad?nocache=1)
+[VT - exe from release (you can compare hash)](https://www.virustotal.com/gui/file/a717ee5db6a100a7c2beb9160901050d577993dbb14f1e7575288f514f9e10c2?nocache=1)
 
 
 ## 🔨 Building

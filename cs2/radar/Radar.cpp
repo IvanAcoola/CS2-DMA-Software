@@ -4,7 +4,27 @@
 
 #include "mapsdata.h"
 
+std::string extract_name(const std::string& input)
+{
+	std::string result = input;
+	const std::string prefix = "maps/";
+	if (result.rfind(prefix, 0) == 0)
+	{
+		result.erase(0, prefix.length());
+	}
+	const std::string suffix = ".vpk";
+	if (result.size() >= suffix.size() &&
+		result.compare(result.size() - suffix.size(), suffix.size(), suffix) == 0)
+	{
+		result.erase(result.size() - suffix.size());
+	}
+
+	return result;
+}
+
 void Base_Radar::UpdateMap(std::string mapname) {
+	mapname = extract_name(mapname);
+
 	if (mapname != mp::current_map_name) {
 		mp::current_map_name = mapname;
 		if (mapname == "<empty>") {
