@@ -31,10 +31,10 @@ void Base_Radar::UpdateMap(std::string mapname) {
 			mp::map_texture = NULL;
 			return;
 		}
-		//std::cout << "[ log ] Changing map to " << mapname << std::endl;
+		//std::cout << "[ log ] Changing map to -> " << mapname << std::endl;
 		auto found_map = mp::maps_data.find(mapname);
 		if (found_map == mp::maps_data.end()) {
-			//std::cout << "[ log ] could not find map data!" << std::endl;
+			//std::cout << "[ log ] Could not find map data!" << std::endl;
 		}
 		else {
 			mp::map_zoom = found_map->second[0];
@@ -138,7 +138,6 @@ void Base_Radar::AddPoint(const Vec3& LocalPos, const float& LocalYaw, const Vec
 	if (mp::current_map_name == "de_nuke" || mp::current_map_name == "de_vertigo") {
 		if (Pos.z < mp::split_z) {
 			resolved = this->world_to_minimap2(Pos.y, Pos.x, mp::split_x, mp::split_y, mp::map_zoom, mp::img_h, mp::img_w);
-			//std::cout << "LOWER!" << std::endl;
 		}
 		else resolved = this->world_to_minimap2(Pos.y, Pos.x, mp::map_offset_x, mp::map_offset_y, mp::map_zoom, mp::img_h, mp::img_w);
 	}
