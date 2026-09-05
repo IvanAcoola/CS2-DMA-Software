@@ -226,6 +226,5 @@ void Cheats::Run()
 	catch (std::exception const& e)
 	{
 		//if (globalVars::debug) std::cout << e.what() << std::endl;
-
 	}
 }

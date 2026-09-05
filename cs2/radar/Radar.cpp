@@ -41,7 +41,7 @@ void Base_Radar::UpdateMap(std::string mapname) {
 			mp::map_offset_x = found_map->second[1];
 			mp::map_offset_y = found_map->second[2];
 			if (mp::current_map_name == "de_nuke" || mp::current_map_name == "de_vertigo") {
-				std::cout << "ITS DOUBLE MAP!" << std::endl;
+				//std::cout << "ITS DOUBLE MAP!" << std::endl;
 				mp::split_z = found_map->second[3];
 				mp::split_x = found_map->second[4];
 				mp::split_y = found_map->second[5];
